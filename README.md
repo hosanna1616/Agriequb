@@ -1,3 +1,5 @@
+<img width="923" height="440" alt="image" src="https://github.com/user-attachments/assets/0ddd07e6-d154-4d08-889c-6ebd72944276" />
+
 ## AgriEqub 
 An innovative digital platform that combines the trusted Ethiopian Equb (rotating savings and credit groups) with end-to-end coffee farm traceability and EUDR compliance tools.
 
