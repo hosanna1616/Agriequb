@@ -1,0 +1,72 @@
+:root {
+  --espresso: #1a0f0f;
+  --dark-roast: #2a1b14;
+  --coffee-brown: #3b2a1e;
+  --caramel: #c47b4b;
+  --gold: #d4af37;
+  --cream: #f5e8c7;
+}
+
+body {
+  background-color: var(--espresso);
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+body.light {
+  background-color: var(--cream);
+  color: var(--espresso);
+}
+
+.noise-overlay {
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+  opacity: 0.05;
+  filter: contrast(120%) brightness(100%);
+  pointer-events: none;
+}
+
+.glass-dark {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-light {
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--caramel);
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: initial;
+}
+
+html, body {
+  height: auto;
+}
+/* smooth premium feel like Oryzo */
+* {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* subtle glow hover */
+.glow-hover:hover {
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.25);
+}
