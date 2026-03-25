@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --espresso: #1A0F0F;
+  --dark-roast: #2A1B14;
+  --coffee-brown: #3B2A1E;
+  --caramel-highlight: #C47B4B;
+  --gold-accent: #D4AF37;
+  --cream: #F5E8C7;
+}
+
+@theme {
+  --color-espresso: var(--espresso);
+  --color-dark-roast: var(--dark-roast);
+  --color-coffee-brown: var(--coffee-brown);
+  --color-caramel-highlight: var(--caramel-highlight);
+  --color-gold-accent: var(--gold-accent);
+  --color-cream: var(--cream);
+}
+
+@layer base {
+  body {
+    @apply antialiased overflow-x-hidden;
+  }
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(circle at center, transparent 0%, rgba(26, 15, 15, 0.2) 100%);
+}
+
+.dark .bg-radial-vignette {
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+}
